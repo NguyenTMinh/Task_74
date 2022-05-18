@@ -8,7 +8,7 @@ import android.os.IBinder;
 import androidx.annotation.Nullable;
 
 public class MusicBoundService extends Service {
-    private final IBinder mBinder = new MusicBinder();
+//    private final IBinder mBinder = new MusicBinder();
 
     @Nullable
     @Override

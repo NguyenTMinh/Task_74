@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Code/AndroidPJ/Task_74/app/src/main/res/drawable/button_pause_play.xml" value="0.148" />
+        <entry key="..\:/Code/AndroidPJ/Task_74/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.1395" />
+        <entry key="..\:/Code/AndroidPJ/Task_74/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Code/AndroidPJ/Task_74/app/src/main/res/layout/media_controller.xml" value="0.264" />
         <entry key="app/src/main/res/drawable/buttom_state.xml" value="0.121" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
