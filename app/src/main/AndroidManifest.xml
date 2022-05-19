@@ -21,8 +21,9 @@
         </activity>
 
         <service android:name=".ExampleService" android:exported="false"/>
-        <service android:name=".ForegroundService" android:exported="true" android:enabled="true"/>
-        <service android:name=".MusicService" android:exported="true" android:enabled="true"/>
+        <service android:name=".ForegroundService" android:exported="false" android:enabled="true"/>
+        <service android:name=".MusicService" android:exported="false" android:enabled="true"/>
+        <service android:name=".MusicBoundService" android:exported="false"/>
     </application>
 
 </manifest>

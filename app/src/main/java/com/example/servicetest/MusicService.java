@@ -40,7 +40,7 @@ public class MusicService extends Service {
             mPlayer.start();
         }
         startForeground(2,notification);
-        return START_NOT_STICKY;
+        return START_STICKY;
     }
 
     private void createChannel() {

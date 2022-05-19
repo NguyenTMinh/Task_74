@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_centerVertical="true"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +23,7 @@
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="170dp"
+            android:layout_marginBottom="50dp"
             android:text="@string/heading"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -34,9 +34,8 @@
         <Button
             android:id="@+id/startButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/button_bg"
@@ -49,9 +48,8 @@
         <Button
             android:id="@+id/stopButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/button_bg"
@@ -64,9 +62,8 @@
         <Button
             android:id="@+id/startForegroundButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/button_bg"
@@ -79,9 +76,8 @@
         <Button
             android:id="@+id/startMusicWithFore"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/button_bg"
@@ -90,6 +86,10 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
+
+        <include
+            android:id="@+id/layout_media_controller"
+            layout="@layout/media_controller"/>
 
     </LinearLayout>
 

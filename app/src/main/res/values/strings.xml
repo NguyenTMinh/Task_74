@@ -3,4 +3,5 @@
     <string name="heading">Services In Android</string>
     <string name="startButtonText">Start the Service</string>
     <string name="stopButtonText">Stop the Service</string>
+    <string name="_0_00">0:00</string>
 </resources>

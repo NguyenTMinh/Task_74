@@ -39,7 +39,7 @@ public class ForegroundService extends Service {
                 .build();
         startForeground(1, notification);
 
-        return START_NOT_STICKY;
+        return START_STICKY;
     }
 
     private void createNotificationChannel() {
