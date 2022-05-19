@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         public void onServiceDisconnected(ComponentName name) {
             mBound = false;
+            Log.d(TAG, "onServiceDisconnected: ");
         }
     };
 
@@ -109,10 +110,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onStop() {
         Log.d(TAG, "onStop: ");
+        mBTPausePlay.setChecked(false);
         super.onStop();
         unbindService(connection);
         mBound = false;
-        timer.cancel();
     }
 
     @Override

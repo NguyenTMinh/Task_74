@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import java.text.DateFormat;
 
 public class MusicBoundService extends Service {
+    private static final String TAG = "TAG";
     private final IBinder mBinder = new LocalIBinder();
 
     public class LocalIBinder extends Binder {
@@ -23,6 +24,8 @@ public class MusicBoundService extends Service {
     private MediaPlayer mPlayer;
     private long mRemainTime;
     private ICommunicate mICommunicate;
+    
+    
 
     @Override
     public void onCreate() {
@@ -47,8 +50,14 @@ public class MusicBoundService extends Service {
 
     @Override
     public boolean onUnbind(Intent intent) {
-        pauseMediaPlayer();
+        Log.d(TAG, "onUnbind: ");
         return true;
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy: ");
     }
 
     /**
